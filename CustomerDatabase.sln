@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerDatabase.Server", "CustomerDatabase.Server\CustomerDatabase.Server.csproj", "{5963BB85-7844-47ED-9637-6B01CAB1FDC4}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "customerdatabase.client", "customerdatabase.client\customerdatabase.client.esproj", "{317A4A24-ED3E-4328-8851-668142D1B41B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5963BB85-7844-47ED-9637-6B01CAB1FDC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5963BB85-7844-47ED-9637-6B01CAB1FDC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5963BB85-7844-47ED-9637-6B01CAB1FDC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5963BB85-7844-47ED-9637-6B01CAB1FDC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{317A4A24-ED3E-4328-8851-668142D1B41B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{317A4A24-ED3E-4328-8851-668142D1B41B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{317A4A24-ED3E-4328-8851-668142D1B41B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{317A4A24-ED3E-4328-8851-668142D1B41B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{317A4A24-ED3E-4328-8851-668142D1B41B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{317A4A24-ED3E-4328-8851-668142D1B41B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF89E548-CDE6-4106-A48D-0CCE2AC0EDBB}
+	EndGlobalSection
+EndGlobal
