@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using CustomerDatabase.Server.Data;
 using CustomerDatabase.Server.Areas.Identity.Data;
+using CustomerDatabase.Server.Models;
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("CustDataContextConnection") ?? throw new InvalidOperationException("Connection string 'CustDataContextConnection' not found.");
 
@@ -17,6 +18,23 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+//seedData
+using (var scope = app.Services.CreateScope())
+{
+	var services = scope.ServiceProvider;
+
+	try
+	{
+		seedData.EnsurePopulated(services).Wait();
+	}catch (Exception ex)
+	{
+		//print error message to console
+		var logger = services.GetRequiredService<ILogger<Program>>();
+
+		logger.LogError(ex, "Error occurred seeding database");
+	}
+}
 
 app.UseDefaultFiles();
 app.UseStaticFiles();
