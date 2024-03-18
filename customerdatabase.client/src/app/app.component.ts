@@ -1,17 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Customer } from './customer';
 
-export interface Customer {
-  customerID: number;
-  first: string;
-  last: string;
-  address: string;
-  zip: string;
-  email: string;
-  phone: string;
-  history: string; 
 
-}
+
 
 @Component({
   selector: 'app-root',
